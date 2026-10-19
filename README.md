@@ -24,8 +24,7 @@ Why it matters to a business:
 | Server OS | Windows Server 2022 Standard Evaluation (Desktop Experience), 180-day evaluation |
 | Client OS | Windows 11 ARM64 |
 
-Note: Microsoft only offers Windows Server as x64, and my Mac is ARM. DC01 runs in UTM's **Emulate** mode (x86_64), which works but is slower than a native ARM VM. See [troubleshooting](docs/troubleshooting.md) for how I got here.
-
+Note: Microsoft's Evaluation Center only offers Windows Server 2022 as x64, and my Mac is ARM. DC01 runs in UTM's **Emulate** mode (x86_64), which works but is slower than a native ARM VM. ARM64 Server builds exist only as unofficial builds. See [troubleshooting](docs/troubleshooting.md) for how I got here.
 ## Lab layout
 
 | Machine | OS | Role | Specs | Status |
