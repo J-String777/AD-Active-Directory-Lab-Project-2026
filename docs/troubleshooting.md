@@ -4,7 +4,7 @@ Problems I hit while building the lab, what I checked, and what fixed them.
 
 ## 1. No ARM64 version of Windows Server
 
-- **Symptom:** My plan was VMware Fusion with Windows Server ARM64. Microsoft's official Server downloads are x64 only.
+- **Symptom:** My plan was VMware Fusion with Windows Server ARM64. Microsoft's Server Evaluation Center downloads are x64 only.
 - **Fix:** Used UTM in Emulate mode (x86_64) for DC01 with the official x64 ISO.
 - **Follow-on change:** DC01 and CLIENT01 must be on the same virtual network, and Fusion and UTM can't easily share one. So the whole lab moved to UTM.
 - **Takeaway:** Check that your host CPU architecture matches the software before you plan the lab. Emulation works but is slower.
