@@ -7,7 +7,7 @@ Each entry uses Observation / Change / Next step. Dates are from my notes.
 - **Observation:** I didn't know much about Active Directory, so I started by looking up what it is, why it matters, how it works, and how it helps a business.
 - **Observation:** My only computer is an M2 MacBook, so the usual VirtualBox setup from Windows tutorials won't work.
 - **Change:** Planned the lab around VMware Fusion, with UTM as the backup.
-- **Observation:** Microsoft's official Windows Server downloads are x64 only. There is no ARM64 Server ISO.
+- **Observation:** Microsoft's Evaluation Center only lists x64 Windows Server ISOs. ARM64 Server builds exist only as unofficial builds.
 - **Interpretation:** Fusion and UTM can't easily share one virtual network, and DC01 and CLIENT01 have to be on the same one.
 - **Change:** Dropped Fusion and moved the whole lab to UTM. DC01 will emulate x86_64, and CLIENT01 will use Windows 11 ARM64.
 - **Next step:** Download UTM and both ISOs.
