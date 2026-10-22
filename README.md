@@ -73,5 +73,6 @@ DC01 settings: gateway `192.168.64.1`, DNS `127.0.0.1` (points at itself until A
 - [Active Directory From Zero: The Homelab Build That Gets You Hired](https://www.youtube.com/watch?v=3pP0SaSrgSU&list=PLpO81gaJd_ANxwmyhiOctVh6QdxV-DneF)
 - [Microsoft: AD DS overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 - [UTM for Mac](https://mac.getutm.app/)
+- - [Broadcom: Arm guests in Fusion on Apple silicon](https://knowledge.broadcom.com/external/article/315602/compatibility-considerations-for-arm-gue.html)
 
 Lab passwords are not stored in this repo. All IP and MAC addresses here are private lab values.
