@@ -4,11 +4,13 @@ Problems I hit while building the lab, what I checked, and what fixed them.
 
 ## 1. No ARM64 version of Windows Server
 
-- **Symptom:** My plan was VMware Fusion with Windows Server ARM64. Microsoft's Server Evaluation Center downloads are x64 only.
+- **Symptom:** My plan was VMware Fusion with Windows Server ARM64. Microsoft's Server Evaluation Center only offers x64 ISOs.
+- **Cause:** Fusion on Apple Silicon runs only Arm guests, so it can't boot an x64 Server ISO.
 - **Fix:** Used UTM in Emulate mode (x86_64) for DC01 with the official x64 ISO.
 - **Follow-on change:** DC01 and CLIENT01 must be on the same virtual network, and Fusion and UTM can't easily share one. So the whole lab moved to UTM.
 - **Takeaway:** Check that your host CPU architecture matches the software before you plan the lab. Emulation works but is slower.
-
+- **Reference:** [Broadcom: Arm guests in Fusion on Apple silicon](https://knowledge.broadcom.com/external/article/315602/compatibility-considerations-for-arm-gue.html)
+  
 ## 2. "Windows cannot find the Microsoft Software License Terms"
 
 - **Symptom:** Setup started, then showed this error, canceled the installation and restarted. It happened on attempts 1 and 2.
